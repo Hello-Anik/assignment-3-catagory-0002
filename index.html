@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,11 +29,25 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <style>
         .sora{
-  font-family: "Sora", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
+            font-family: "Sora", serif;
+            font-optical-sizing: auto;
+            font-weight: <weight>;
+            font-style: normal;
+          }
+          .animate{
+            animation-name: up-and-down;
+            animation-duration: 1s;
+            animation-delay: ;
+            animation-iteration-count: 10;
+          }
+          @keyframes up-and-down {
+            from {
+              transform: translateY(-50px);
+            }
+            to {
+              transform: translateY(0);
+            }
+          }
       </style>
 </head>
 <body class="sora space-y-20">
@@ -65,16 +79,14 @@
               </div>
           </div>
           <!-- banner-section  -->
-           <section class="mt-20 text-center">
-                <div class="">
-                  <div class="text-center">
-                    <h1 class="text-5xl font-bold">Freshness <span class="text-[#179800]">You Can</span><br>
-                      <span class="text-[#179800]">Count</span> On, Prices You’ll Love!</h1>
-                    <p>Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br>staples, we’ve got you covered every day!</p>
-                </div>
-                </div>
+           <section class="mt-20 text-center ">
+                  <div class="text-center max-w-[600px] mx-auto">
+                    <h1 class="text-5xl font-bold animate" >Freshness You <span class="text-[#179800]">Can
+                     Count</span> On, Prices You’ll Love!</h1>
+                    <p>Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
+                </div>   
                 <div>
-                    <img src="./c2-assets/hero-vegetables.png" alt="" class="mx-auto w-[800px]">
+                    <img src="./c2-assets/hero-vegetables.png" alt="" class="mx-auto">
                 </div>
            </section>
     </section>
@@ -132,7 +144,7 @@
         <section class="bg-secondary  py-24">
            <section class="md:container mx-auto lg:max-w-screen-xl">
               <h2  class="text-3xl text-[#179800] font-bold">Popular Products</h2>
-              <div class="mt-16 flex gap-24 md:flex-row flex-col w-full lg:flex-row justify-items-center mx-auto">
+              <div class="mt-16 flex gap-24 flex-col w-full lg:flex-row md:flex-row justify-items-center ">
                 <div class="rounded-xl bg-gradient-to-t from-[#a0f191] to-[#48d92e] pl-10 
                   w-96">
                   <div class="pt-3 space-y-2">
@@ -144,7 +156,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="grid grid-cols-2 lg:grid-cols-3 md:grid-cols-2 gap-6 justify-items-center">
+                <div class="grid grid-cols-2 lg:grid-cols-3 md:grid-cols-2 gap-6 justify-items-center ">
                     <div class="flex bg-white p-2 rounded-lg items-center gap-2">
                       <img src="./c2-assets/tomato.png" alt="" class="bg-secondary rounded-md">
                       <div class="pr-3">
@@ -199,7 +211,7 @@
 
                       </div>
                     </div>
-                    <div class="flex bg-white p-2 rounded-lg items-center gap-2">
+                    <div class="flex bg-white p-2 rounded-lg items-center md:hidden gap-2 lg:flex">
                       <img src="./c2-assets/tomato.png" alt="" class="bg-secondary rounded-md">
                       <div class="pr-3">
                         <i class="fa-solid fa-star text-yellow-500"><span class="text-black ml-2">4.5</span></i>
@@ -208,7 +220,7 @@
 
                       </div>
                     </div>
-                    <div class="flex bg-white p-2 rounded-lg items-center gap-2">
+                    <div class="flex bg-white p-2 rounded-lg items-center md:hidden gap-2 lg:flex">
                       <img src="./c2-assets/potato.png" alt="" class="bg-secondary rounded-md">
                       <div class="pr-3">
                         <i class="fa-solid fa-star text-yellow-500"><span class="text-black ml-2">4.5</span></i>
@@ -217,7 +229,7 @@
 
                       </div>
                     </div>
-                    <div class="flex bg-white p-2 rounded-lg items-center gap-2">
+                    <div class="flex bg-white p-2 rounded-lg items-center gap-2 md:hidden lg:flex">
                       <img src="./c2-assets/onion.png" alt="" class="bg-secondary rounded-md">
                       <div class="pr-3">
                         <i class="fa-solid fa-star text-yellow-500"><span class="text-black ml-2">4.5</span></i>
@@ -256,7 +268,54 @@
               
             </div>
         </section>
-        <section  class="md:container mx-auto lg:max-w-screen-xl bg-secondary rounded-xl ">
+        <section class="md:container mx-auto lg:max-w-screen-xl">
+            <h2 class="text-4xl text-[#179800] font-bold">Popular Rice</h2>
+            <div class="mt-20 grid md:grid-cols-2 lg:grid-cols-3 justify-center gap-6">
+              <div class="card bg-secondary w-96 shadow-xl ">
+                <figure class="pt-3">
+                  <img
+                    src="./c2-assets/dawat-mock-up.png"
+                    alt="" class="w-[200px]" />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title">Dawat Rice</h2>
+                  <p>Rice is a staple food grain that is widely consumed around the world, known for its versatility and ability to complement a variety of dishes.</p>
+                  <div class="card-actions justify-end">
+                    <button class="btn bg-[#179800] text-white hover:text-black">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card bg-secondary w-96 shadow-xl ">
+                <figure class="pt-3">
+                  <img
+                    src="./c2-assets/india-gate-mock-up.png"
+                    alt="" class="w-[100px]" />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title">India Rice</h2>
+                  <p>Rice is a staple food grain that is widely consumed around the world, known for its versatility and ability to complement a variety of dishes.</p>
+                  <div class="card-actions justify-end">
+                    <button class="btn bg-[#179800] text-white hover:text-black">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card bg-secondary w-96 shadow-xl ">
+                <figure class="pt-3">
+                  <img
+                    src="./c2-assets/dawat-mock-up.png"
+                    alt="" class="w-[200px] grayscale"  />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title">Fortifide Rice</h2>
+                  <p>Rice is a staple food grain that is widely consumed around the world, known for its versatility and ability to complement a variety of dishes.</p>
+                  <div class="card-actions justify-end">
+                    <button class="btn bg-[#179800] text-white hover:text-black">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+        <section  class="md:container mx-auto lg:max-w-screen-xl bg-secondary rounded-xl relative top-56 ">
           <div class="flex justify-center py-6 flex-col md:flex-row lg:flex-row items-center text-center lg:text-start">
             <img src="./c2-assets/vegetable-busket.png" alt="">
             <form action="">
@@ -271,9 +330,10 @@
             </form>
           </div>
         </section>
+        
     </main>
-    <footer class=" bg-[#179800]  py-24 ">
-      <footer class="footer text-neutral-content p-10 md:container mx-auto lg:max-w-screen-xl ">
+    <footer class=" bg-[#179800]  py-24 h-full pt-[200px]">
+      <footer class="footer text-neutral-content  md:container mx-auto lg:max-w-screen-xl pl-4">
         <nav>
           <img src="./c2-assets/logo-footer.png" alt="">
           <p>Discover a world of treats, toys, and <br>essentials handpicked for your furry friends</p>
