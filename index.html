@@ -14,6 +14,7 @@
               colors: {
                 clifford: '#da373d',
                 'green': '#179800',
+                'secondary': '#EFEBE3',
               }
             }
           }
@@ -35,7 +36,7 @@
 }
       </style>
 </head>
-<body class="sora">
+<body class="sora space-y-20">
     <header class="  bg-gradient-to-t from-[#EFEBE3] to-[#ffffff]">
     <section class="md:container mx-auto lg:max-w-screen-xl ">
         <div class="navbar">
@@ -64,20 +65,75 @@
               </div>
           </div>
           <!-- banner-section  -->
-           <section class="mt-20 text-center max-w-xl mx-auto h-[full] ">
-                <div class="text-center space-y-2">
-                    <h1 class="text-4xl font-bold">Freshness <span class="text-[#179800]">You Can</span><br>
-                        <span class="text-[#179800]">Count</span> <span>On, Prices You’ll Love!</span></h1>
-                    <p>Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
+           <section class="mt-20 text-center">
+                <div class="">
+                  <div class="text-center">
+                    <h1 class="text-5xl font-bold">Freshness <span class="text-[#179800]">You Can</span><br>
+                      <span class="text-[#179800]">Count</span> On, Prices You’ll Love!</h1>
+                    <p>Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br>staples, we’ve got you covered every day!</p>
+                </div>
                 </div>
                 <div>
-                    <img src="./c2-assets/hero-vegetables.png" alt="" class="mx-auto">
+                    <img src="./c2-assets/hero-vegetables.png" alt="" class="mx-auto w-[800px]">
                 </div>
            </section>
     </section>
     </header>
-    <main>
-
+    <main class="space-y-24">
+        <!-- services section start  -->
+        <section  class="md:container mx-auto lg:max-w-screen-xl ">
+            <h1 class="text-4xl text-[#179800] font-bold">Services</h1>
+          <!-- service cards -->
+            <div class="mt-20 grid lg:grid-cols-3 md:grid-cols-3 gap-6 justify-center">
+              <div class="card bg-secondary w-[350px] shadow-xl">
+                <figure class="px-10 pt-10 ">
+                  <div class=" bg-white p-4 rounded-full">
+                    <img
+                    src="./c2-assets/service.png"
+                    alt="service"
+                    class="rounded-xl " />
+                  </div>
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">24/7 Services </h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                </div>
+              </div>
+              <div class="card bg-secondary w-[350px] shadow-xl">
+                <figure class="px-10 pt-10 ">
+                  <div class=" bg-white p-4 rounded-full">
+                    <img
+                    src="./c2-assets/delivery.png"
+                    alt="delivery"
+                    class="rounded-xl " />
+                  </div>
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Fast Delivery </h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                </div>
+              </div>
+              <div class="card bg-secondary w-[350px] shadow-xl">
+                <figure class="px-10 pt-10 ">
+                  <div class=" bg-white p-4 rounded-full">
+                    <img
+                    src="./c2-assets/healthy.png"
+                    alt="healthy"
+                    class="rounded-xl " />
+                  </div>
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Healthy Products  </h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                </div>
+              </div>
+            </div>
+        </section>
+        <section class="bg-secondary">
+           <section class="md:container mx-auto lg:max-w-screen-xl ">
+                <h2  class="text-4xl text-[#179800] font-bold">Popular Products</h2>
+           </section>
+        </section>
     </main>
     <footer>
 
